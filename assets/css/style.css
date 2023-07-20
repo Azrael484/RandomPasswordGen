@@ -1,100 +1,101 @@
-
+/* Universal selector: Sets values for some of the properties for each one of the elements and pseudo-elements to which those properties apply*/
 * {
   box-sizing: border-box;
+  text-align: center;
 }
-
+/* We use the root pseudo-element to delimit the scope of the CSS variables/custom properties. They all relate to certain colors that appear repeatedly while rendering the page*/
+:root{
+--wrapper-header-card-color: hsl(206, 17%, 28%);
+--header-button-text-color: hsl(60, 50%, 50%);
+--border-password-related-color: hotpink;
+--before-footer-border-password: #c0c7cf;
+}
+/*Element selector: sets the font family from which the browser chooses a font for the page's text and the background color of the page*/
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(19, 70, 70);
 }
-
+/*Class element: applies style to the main box that wraps all the other boxes, texts and the button that form the UI of the password generator*/
 .wrapper {
   width: 60%;
   margin:auto;
   padding: 0 20px 40px;
-  background-color:  hsl(206, 17%, 28%);
-  border: 2px dashed hotpink;
+  background-color: var(--wrapper-header-card-color);
+  border: 2px dashed var(--border-password-related-color);
 }
-
+/*Element selectors: apply styling to the main heading and its container box*/
 .wrapper header {
-  text-align: center;
   padding: 20px;
-  color: hsl(206, 17%, 28%);
+  color: var(--wrapper-header-card-color);
 }
 
 .wrapper header h1{
-  color:hsl(60, 50%, 50%);
+  color: var(--header-button-text-color);
   font-size:3rem;
 }
-
+/*Class selectors: determine the properties of the .card division and its child, the .card-header division*/
 .card {
   background-color: aqua;
   border-radius: 25px;
-  color: hsl(206, 17%, 28%);
+  color: var(--wrapper-header-card-color);
   margin: auto;
   max-width: 80%;
   padding: 30px 30px;
 }
 
 .card .card-header{
-  background-color: hsl(206, 17%, 28%);
-  color: hsl(60, 50%, 50%);
-  text-align: center;
+  background-color: var(--wrapper-header-card-color);
+  color: var(--header-button-text-color);
 }
+/*Element selector: gives color to the text content of the paragraph element below the heading of the .card-header division*/
 
 .card p{
-  color:hotpink;
+  color: var(--border-password-related-color);
 }
 
+/*Class selector: dictates that, regardless of screen size, the box containing the readonly text-area must be alloted at least 100px while rendering*/
 .card-body {
   min-height: 100px;
 }
 
-.card-footer {
-  text-align: center;
-}
-
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
+/*Id selector: Specifies the property values corresponding to the area of the viewport where the randomly generated password will be displayed*/
 #password {
   appearance: none;
   display: block;
   width: 100%;
   padding:15px 15px 85px;
   font-size: 1.2rem;
-  text-align: center;
   margin: 10px auto;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed var(--before-footer-border-password);
   border-radius: 10px;
   resize: none;
   overflow: hidden;
   background-color: aquamarine;
-  color: hotpink;
+  color: var(border-password-related-color);
 }
-
-
+/*Pseudo-element: It adds a relatively narrow line just before the child of the .card-footer division (in this case, the "Generate Password" button)*/
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: var(--before-footer-border-password);
+  height: 2px;
+}
+/*Class selector: sets values to the properties of the button that, when pressed, initiates the execution of the scripts for password generation*/
 .btn {
   background-color: hsl(180, 50%, 33%);
   border-radius: 25px;
   box-shadow: 2px 4px 6px 8px  rgba(0, 0, 0, .75);
-  color: hsl(60, 50%, 50%);
+  color: var(--header-button-text-color);
   display: inline-block;
   font-size: 2rem;
   line-height: 3rem;
   margin: 16px;
   padding: 15px 45px;
-  text-align: center;
   cursor: pointer;
 }
-g
-
+/*Media queries: they make the page responsive to changes in screen sizes, so the app will be usable regardless of the device's width. We are following a desk-top first approach
+and added some color variation to indicate the breakpoints visually*/
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
