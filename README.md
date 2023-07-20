@@ -12,11 +12,11 @@ For employees with access to sensitive data, the number of different accounts, d
 
 The finished and (hopefully thoroughly debugged) application is available at:
 
-https://jguemarez.github.io/RandomPasswordGen/
+**https://jguemarez.github.io/RandomPasswordGen/**
 
 The page resembles this image:
 
-![Random Password Generator Web App](./assets/images/Screenshot 2023-07-20 163703.png)
+![Random Password Generator Web App](web-app1.png)
 
  (when viewed in the 114.0.5735.201 (Official Build) (64-bit) (cohort: M115_Early_Stable_control)  Google Chrome browser.)
 
@@ -24,23 +24,23 @@ The page resembles this image:
  
  1. Firtst, you decide whether you actually want to follow the instructions:
 
- ![Prompts the user whether to procceed](assets/images/Screenshot 2023-07-20 164839.png)
+ ![Prompts the user whether to procceed](web-app2.png)
 
  2. Choosing the length (in terms of the number of characters in the string) of the password to be generated:
 
- ![Asks how long does the password need to be](assets/images/Screenshot 2023-07-20 164955.png)
+ ![Asks how long does the password need to be](web-app3.png)
 
  3. Specifying the types of characters that are available and the inputs required to choose them:
 
- ![Displays the available character types](assets/images/Screenshot 2023-07-20 165054.png)
+ ![Displays the available character types](web-app4.png)
 
 4. Then the user will be asked to input which character type the choose as many times as the password is long:
 
-![Requesting the type of the character](assets/images/Screenshot 2023-07-20 165137.png)
+![Requesting the type of the character](web-app5.png)
 
 5.Finally, the user will be shown the generated password in the screen:
 
-![Example of generated password](assets/images/Screenshot 2023-07-20 170938.png)
+![Example of generated password](web-app6.png)
 
 ## Authoring
 The author of this app is Jonathan Maldonado Guemarez. The repository containing the HTML, CSS, and JS source code can be found at:
