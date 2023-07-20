@@ -1,0 +1,128 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(19, 70, 70);
+}
+
+.wrapper {
+  width: 60%;
+  margin:auto;
+  padding: 0 20px 40px;
+  background-color:  hsl(206, 17%, 28%);
+  border: 2px dashed hotpink;
+}
+
+.wrapper header {
+  text-align: center;
+  padding: 20px;
+  color: hsl(206, 17%, 28%);
+}
+
+.wrapper header h1{
+  color:hsl(60, 50%, 50%);
+  font-size:3rem;
+}
+
+.card {
+  background-color: aqua;
+  border-radius: 25px;
+  color: hsl(206, 17%, 28%);
+  margin: auto;
+  max-width: 80%;
+  padding: 30px 30px;
+}
+
+.card .card-header{
+  background-color: hsl(206, 17%, 28%);
+  color: hsl(60, 50%, 50%);
+  text-align: center;
+}
+
+.card p{
+  color:hotpink;
+}
+
+.card-body {
+  min-height: 100px;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+#password {
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding:15px 15px 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px auto;
+  border: 2px dashed #c0c7cf;
+  border-radius: 10px;
+  resize: none;
+  overflow: hidden;
+  background-color: aquamarine;
+  color: hotpink;
+}
+
+
+.btn {
+  background-color: hsl(180, 50%, 33%);
+  border-radius: 25px;
+  box-shadow: 2px 4px 6px 8px  rgba(0, 0, 0, .75);
+  color: hsl(60, 50%, 50%);
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 16px;
+  padding: 15px 45px;
+  text-align: center;
+  cursor: pointer;
+}
+g
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+    background-color: hsl(270, 75%, 66%);
+  }
+  body{
+    background-color: rgb(38, 140, 140);
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+    background-color: hsl(360, 100%, 99%);
+  }
+
+  body{
+    background-color: rgb(76, 70, 70);
+  }
+    
+  h1{
+      font-size: 16px;
+  }
+
+}
