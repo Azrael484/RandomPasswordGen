@@ -47,6 +47,11 @@ body {
   background-color: var(--wrapper-header-card-color);
   color: var(--header-button-text-color);
 }
+/*Element selector: changes the size of the text in the <h2> element to correct for the unforeseen diminishment when Normalize.css was linked*/
+
+.card .card-header h2{
+  font-size: 2rem;
+}
 /*Element selector: gives color to the text content of the paragraph element below the heading of the .card-header division*/
 
 .card p{
