@@ -51,6 +51,10 @@ The starting code that served as inspiration and guidance to this project is of 
 
 https://github.com/coding-boot-camp/friendly-parakeet 
 
+The Normalize.css file is of the authorship of Necolas and can be found at: https://necolas.github.io/normalize.css/
+
+The .gitignore.txt file can be found at the Rutgers Coding Bootcamp GitLab repo: https://git.bootcampcontent.com/Rutgers-University/RUT-VIRT-FSF-PT-06-2023-U-LOLC/-/tree/main
+
 ## Help
 
 To ask any question regarding this Web app or its source code, feel free to write to me:
