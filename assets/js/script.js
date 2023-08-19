@@ -94,7 +94,7 @@ generateBtn.addEventListener("click", function (event){ //Applying the .addEvent
   var randomChar; //This variable will store a randomly generated character that will be included in the password's string. The variable will be assigned a value a "passwordLength" amount of times.
 
 
-  var arrayLength = Number(passwordLength); //Change the string-typed numeral stored in "passwordlength" to a number and store the result in Length.
+  var arrayLength = Number(passwordLength); //Change the string-typed numeral stored in "passwordlength" to a number and store the result in arrayLength.
 
   console.log(arrayLength);//Logs the value stored in "Length" to the console.
 
@@ -230,7 +230,7 @@ generateBtn.addEventListener("click", function (event){ //Applying the .addEvent
 
     }
 
-    passwordTextEl.textContent = "Your new secure password is: " + password;//After the condition in the loop evaluates as false, output the message after the assignment operator by using the "".textContent" method to insert the text in the area corresponding to the <textarea> element.
+    passwordTextEl.innerHTML = "Your new secure password is:\n" + password;//After the condition in the loop evaluates as false, output the message after the assignment operator by using the "".textContent" method to insert the text in the area corresponding to the <textarea> element.
 
     return;//Ends execution of the function.
 
